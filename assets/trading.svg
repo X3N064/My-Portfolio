@@ -1,43 +1,3 @@
-<<<<<<< HEAD
-<svg width="400" height="230" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" style="stop-color:#1e1e2f; stop-opacity:1">
-            <animate attributeName="offset" values="0;1;0" dur="20s" repeatCount="indefinite" />
-          </stop>
-          <stop offset="100%" style="stop-color:#2e2e4f; stop-opacity:1" />
-        </linearGradient>
-      </defs>
-
-      <style>
-        .title { fill: #ff4081; font-weight: bold; font-size: 18px; }
-        .stat { fill: white; font-size: 14px; }
-        .highlight { fill: #ff1744; font-weight: bold; animation: pulse 2s infinite; }
-        .timestamp { fill: gray; font-size: 12px; animation: fadeGlow 5s infinite alternate; }
-        @keyframes pulse {
-          0% { transform: scale(1); }
-          50% { transform: scale(1.02); }
-          100% { transform: scale(1); }
-        }
-        @keyframes fadeGlow {
-          from { opacity: 0.5; }
-          to { opacity: 1; }
-        }
-        svg { background: url(#grad); font-family: monospace; }
-      </style>
-
-      <rect width="100%" height="100%" rx="15" fill="url(#grad)"/>
-
-      <text x="20" y="30" class="title">Hyun(Kenneth) Sim's Trading Stats</text>
-      <text x="20" y="55" class="stat">NVDA: $nan | PnL: -$nan (+nan%)</text>
-      <text x="20" y="75" class="stat">MSFT: $387.27 | PnL: -$120.23 (-2.74%)</text>
-      <text x="20" y="95" class="stat">AMZN: $186.48 | PnL: -$551.00 (-12.87%)</text>
-      <text x="20" y="115" class="stat">GOOGL: $159.03 | PnL: -$328.38 (-7.36%)</text>
-
-      <text x="20" y="150" class="highlight">Total PnL: $+nan (+nan%)</text>
-      <text x="20" y="190" class="timestamp">Last Updated: 2025-04-25 05:56:16 UTC</text>
-    </svg>
-=======
 <svg width="500" height="235" xmlns="http://www.w3.org/2000/svg">
     <style>
       .title { fill: #ff4081; font-weight: bold; font-size: 20px; }
@@ -77,6 +37,5 @@
     <text x="20" y="175" class="highlight">Total Portfolio: $16,167</text>
     <text x="20" y="200" class="highlight">Total PnL: $-1,665 (-9.34%)</text>
 
-    <text x="20" y="225" class="timestamp">Last Updated: 2025-04-25 06:00:16 UTC</text>
+    <text x="20" y="225" class="timestamp">Last Updated: 2025-04-25 06:11:30 UTC</text>
   </svg>
->>>>>>> cf93b9d (let;s go)
