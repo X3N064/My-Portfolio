@@ -42,44 +42,44 @@ def create_svg(prices):
     # SVG Template
     # (inside create_svg function, replace the SVG part with this)
 
-svg = f'''<svg width="400" height="230" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#1e1e2f; stop-opacity:1">
-        <animate attributeName="offset" values="0;1;0" dur="20s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="100%" style="stop-color:#2e2e4f; stop-opacity:1" />
-    </linearGradient>
-  </defs>
+    svg = f'''<svg width="400" height="230" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#1e1e2f; stop-opacity:1">
+            <animate attributeName="offset" values="0;1;0" dur="20s" repeatCount="indefinite" />
+          </stop>
+          <stop offset="100%" style="stop-color:#2e2e4f; stop-opacity:1" />
+        </linearGradient>
+      </defs>
 
-  <style>
-    .title {{ fill: #ff4081; font-weight: bold; font-size: 18px; }}
-    .stat {{ fill: white; font-size: 14px; }}
-    .highlight {{ fill: {'#00e676' if total_pnl > 0 else '#ff1744'}; font-weight: bold; animation: pulse 2s infinite; }}
-    .timestamp {{ fill: gray; font-size: 12px; animation: fadeGlow 5s infinite alternate; }}
-    @keyframes pulse {{
-      0% {{ transform: scale(1); }}
-      50% {{ transform: scale(1.02); }}
-      100% {{ transform: scale(1); }}
-    }}
-    @keyframes fadeGlow {{
-      from {{ opacity: 0.5; }}
-      to {{ opacity: 1; }}
-    }}
-    svg {{ background: url(#grad); font-family: monospace; }}
-  </style>
+      <style>
+        .title {{ fill: #ff4081; font-weight: bold; font-size: 18px; }}
+        .stat {{ fill: white; font-size: 14px; }}
+        .highlight {{ fill: {'#00e676' if total_pnl > 0 else '#ff1744'}; font-weight: bold; animation: pulse 2s infinite; }}
+        .timestamp {{ fill: gray; font-size: 12px; animation: fadeGlow 5s infinite alternate; }}
+        @keyframes pulse {{
+          0% {{ transform: scale(1); }}
+          50% {{ transform: scale(1.02); }}
+          100% {{ transform: scale(1); }}
+        }}
+        @keyframes fadeGlow {{
+          from {{ opacity: 0.5; }}
+          to {{ opacity: 1; }}
+        }}
+        svg {{ background: url(#grad); font-family: monospace; }}
+      </style>
 
-  <rect width="100%" height="100%" rx="15" fill="url(#grad)"/>
+      <rect width="100%" height="100%" rx="15" fill="url(#grad)"/>
 
-  <text x="20" y="30" class="title">Hyun(Kenneth) Sim's Trading Stats</text>
-  <text x="20" y="55" class="stat">{lines[0]}</text>
-  <text x="20" y="75" class="stat">{lines[1]}</text>
-  <text x="20" y="95" class="stat">{lines[2]}</text>
-  <text x="20" y="115" class="stat">{lines[3]}</text>
+      <text x="20" y="30" class="title">Hyun(Kenneth) Sim's Trading Stats</text>
+      <text x="20" y="55" class="stat">{lines[0]}</text>
+      <text x="20" y="75" class="stat">{lines[1]}</text>
+      <text x="20" y="95" class="stat">{lines[2]}</text>
+      <text x="20" y="115" class="stat">{lines[3]}</text>
 
-  <text x="20" y="150" class="highlight">Total PnL: ${total_pnl:+.2f} ({total_percent:+.2f}%)</text>
-  <text x="20" y="190" class="timestamp">Last Updated: {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')}</text>
-</svg>'''
+      <text x="20" y="150" class="highlight">Total PnL: ${total_pnl:+.2f} ({total_percent:+.2f}%)</text>
+      <text x="20" y="190" class="timestamp">Last Updated: {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')}</text>
+    </svg>'''
 
 
     return svg
