@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <svg width="400" height="230" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -36,3 +37,46 @@
       <text x="20" y="150" class="highlight">Total PnL: $+nan (+nan%)</text>
       <text x="20" y="190" class="timestamp">Last Updated: 2025-04-25 05:56:16 UTC</text>
     </svg>
+=======
+<svg width="500" height="235" xmlns="http://www.w3.org/2000/svg">
+    <style>
+      .title { fill: #ff4081; font-weight: bold; font-size: 20px; }
+      .stat { fill: white; font-size: 14px; }
+      .highlight { fill: #ff1744; font-weight: bold; font-size: 16px; animation: pulse 2s infinite; }
+      .timestamp { fill: gray; font-size: 12px; animation: fadeGlow 5s infinite alternate; }
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.02); }
+        100% { transform: scale(1); }
+      }
+      @keyframes fadeGlow {
+        from { opacity: 0.5; }
+        to { opacity: 1; }
+      }
+      svg { background: #1e1e2f; font-family: monospace; }
+    </style>
+
+    <rect width="100%" height="100%" rx="15" fill="#1e1e2f"/>
+
+    <text x="20" y="30" class="title">Hyun (Kenneth) Sim's Trading Stats</text>
+
+    
+        <image href="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiBmaWxsPSIjOTlkZjAwIiByeD0iMyIvPjwvc3ZnPg==" x="20" y="37" height="20" width="20"/>
+        <text x="50" y="55" class="stat">NVDA - $106.38 | PnL: -$665.76 (-14.14%) | Value: $4,042</text>
+        
+        <image href="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHJlY3Qgd2lkdGg9IjgiIGhlaWdodD0iOCIgeD0iMCIgeT0iMCIgZmlsbD0iI2ZmMzMwMCIvPjxyZWN0IHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHg9IjgiIHk9IjAiIGZpbGw9IiMwMDk5ZmYiLz48cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiB4PSIwIiB5PSI4IiBmaWxsPSIjZmY5OTAwIi8+PHJlY3Qgd2lkdGg9IjgiIGhlaWdodD0iOCIgeD0iOCIgeT0iOCIgcmlnaHQ9IiMwMGZmMDAiLz48L3N2Zz4=" x="20" y="62" height="20" width="20"/>
+        <text x="50" y="80" class="stat">MSFT - $387.27 | PnL: -$120.23 (-2.74%) | Value: $4,260</text>
+        
+        <image href="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiBmaWxsPSIjZmZ5NTIwIiByeD0iMyIvPjwvc3ZnPg==" x="20" y="87" height="20" width="20"/>
+        <text x="50" y="105" class="stat">AMZN - $186.48 | PnL: -$551.00 (-12.87%) | Value: $3,730</text>
+        
+        <image href="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PGNpcmNsZSBjeD0iOCIgY3k9IjgiIHI9IjgiIGZpbGw9IiMwMDk5ZmYiIC8+PC9zdmc+" x="20" y="112" height="20" width="20"/>
+        <text x="50" y="130" class="stat">GOOGL - $159.03 | PnL: -$328.38 (-7.36%) | Value: $4,135</text>
+        
+
+    <text x="20" y="175" class="highlight">Total Portfolio: $16,167</text>
+    <text x="20" y="200" class="highlight">Total PnL: $-1,665 (-9.34%)</text>
+
+    <text x="20" y="225" class="timestamp">Last Updated: 2025-04-25 06:00:16 UTC</text>
+  </svg>
+>>>>>>> cf93b9d (let;s go)
